@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather 24 - see weather Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 90vh;
+    }
+
+    .input-section{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .inputBox{
+        height: 20px;
+        margin-right: 10px;
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    .submitBtn{
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="input-section">
+    <input type="text" class="inputBox" placeholder="'type map which you want'">
+    <button class="submitBtn">Submit</button>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="map.js"></script>
+</body>
+</html>
